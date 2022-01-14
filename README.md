@@ -87,3 +87,7 @@ Has `@JSDoc`, with better documentation
 >    - `lineNumber` - Number - **REQUIRED** - Example `525`
 >    - `year` - Number - Optional, Defaults to current year, Value must be between 2021-2031
 > - Returns - String - a link to PDF from Arriva Bratislava Servers
+
+---
+
+*i hope one day that we would be able to make apps built on transit here in bratislava*
