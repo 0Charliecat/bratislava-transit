@@ -1,0 +1,15 @@
+{
+  "name": "bratislava-transit",
+  "version": "1.0.0",
+  "description": "A wrapper for Bratislava OpenData API, MHD section",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": ["bratislava", "transit", "mhd"],
+  "author": "CharlieCat",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
