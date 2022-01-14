@@ -22,7 +22,7 @@ Has `@JSDoc`, with better documentation
 
 > ### Navigation
 > 
-> -  [https://github.com/slovak-cat/bratislava-transit#getting-started](Getting Started!)
+> -  [Getting Started!](https://github.com/slovak-cat/bratislava-transit#getting-started)
 > 
 > -  [Documentation](https://github.com/slovak-cat/bratislava-transit#documentation)
 
