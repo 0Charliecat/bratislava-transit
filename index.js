@@ -1,6 +1,8 @@
 const request = require('request'),
       serverUrl = `http://opendata.bratislava.sk/api/mhd/`,
-      pckV = `1.0.0`;
+      pckV = `1.0.1`;
+
+let userAgent = 'nodejs_bratislava-transit/' + pckV
 
 // https://opendata.bratislava.sk/dataset/insight/17112
 
@@ -20,11 +22,14 @@ class BratislavaMHD {
    * 
    * main()
    */
-  constructor(apiKey) {
+  constructor(apiKey, options = {}) {
     apiKey = apiKey.replace(`\n`, ``)
    const openKEY = apiKey
     if (typeof(apiKey) === "string"){
       this.key = apiKey;
+    }
+    if (options.hasOwnProperty('userAgent')) {
+      userAgent = options.userAgent
     }
     //console.log(this)
   }
@@ -36,7 +41,7 @@ class BratislavaMHD {
         var options = {
             url: serverUrl + url,
             headers: {
-                'User-Agent': 'nodejs_bratislava-transit/' + pckV,
+                'User-Agent': userAgent,
                 'Key': keyIt
             }
         }
